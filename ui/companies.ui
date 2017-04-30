@@ -1,0 +1,295 @@
+<ui version="4.0" >
+ <class>CompaniesWidget</class>
+ <widget class="QWidget" name="CompaniesWidget" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>534</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Companies</string>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QSplitter" name="splitter" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QTableView" name="companiesTable" >
+      <property name="editTriggers" >
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="alternatingRowColors" >
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode" >
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior" >
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="sortingEnabled" >
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget" >
+      <layout class="QVBoxLayout" >
+       <item>
+        <layout class="QGridLayout" >
+         <item row="0" column="0" >
+          <widget class="QLabel" name="id_label" >
+           <property name="text" >
+            <string>ID</string>
+           </property>
+           <property name="buddy" >
+            <cstring>id_lineEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" >
+          <widget class="QLineEdit" name="id_lineEdit" >
+           <property name="maxLength" >
+            <number>3</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" >
+          <widget class="QLabel" name="name_label" >
+           <property name="text" >
+            <string>Name</string>
+           </property>
+           <property name="buddy" >
+            <cstring>name_lineEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" >
+          <widget class="QLineEdit" name="name_lineEdit" />
+         </item>
+         <item row="2" column="0" >
+          <widget class="QLabel" name="phone_label" >
+           <property name="text" >
+            <string>Phone</string>
+           </property>
+           <property name="buddy" >
+            <cstring>phone_lineEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1" >
+          <widget class="QLineEdit" name="phone_lineEdit" />
+         </item>
+         <item row="3" column="0" >
+          <widget class="QLabel" name="fax_label" >
+           <property name="text" >
+            <string>Fax</string>
+           </property>
+           <property name="buddy" >
+            <cstring>fax_lineEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" >
+          <widget class="QLineEdit" name="fax_lineEdit" />
+         </item>
+         <item row="4" column="0" >
+          <widget class="QLabel" name="mail_label" >
+           <property name="text" >
+            <string>Mail</string>
+           </property>
+           <property name="buddy" >
+            <cstring>mail_lineEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1" >
+          <widget class="QLineEdit" name="mail_lineEdit" >
+           <property name="inputMask" >
+            <string/>
+           </property>
+           <property name="text" >
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" >
+          <widget class="QLabel" name="sita_label" >
+           <property name="text" >
+            <string>SITA</string>
+           </property>
+           <property name="buddy" >
+            <cstring>sita_lineEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1" >
+          <widget class="QLineEdit" name="sita_lineEdit" >
+           <property name="maxLength" >
+            <number>7</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" >
+          <widget class="QLabel" name="vhf_label" >
+           <property name="text" >
+            <string>VHF</string>
+           </property>
+           <property name="buddy" >
+            <cstring>vhf_lineEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1" >
+          <widget class="QLineEdit" name="vhf_lineEdit" >
+           <property name="maxLength" >
+            <number>7</number>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0" >
+          <widget class="QLabel" name="address_label" >
+           <property name="text" >
+            <string>Address</string>
+           </property>
+           <property name="buddy" >
+            <cstring>address_lineEdit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1" >
+          <widget class="QLineEdit" name="address_lineEdit" />
+         </item>
+         <item row="8" column="0" >
+          <widget class="QLabel" name="zip_label" >
+           <property name="text" >
+            <string>ZIP</string>
+           </property>
+           <property name="buddy" >
+            <cstring>zip_spinBox</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1" >
+          <widget class="QSpinBox" name="zip_spinBox" >
+           <property name="buttonSymbols" >
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="maximum" >
+            <number>999999</number>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0" >
+          <widget class="QLabel" name="country_label" >
+           <property name="text" >
+            <string>Country</string>
+           </property>
+           <property name="buddy" >
+            <cstring>country_comboBox</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1" >
+          <widget class="QComboBox" name="country_comboBox" />
+         </item>
+         <item row="10" column="0" >
+          <widget class="QLabel" name="airport_label" >
+           <property name="text" >
+            <string>Airport</string>
+           </property>
+           <property name="buddy" >
+            <cstring>airport_comboBox</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1" >
+          <widget class="QComboBox" name="airport_comboBox" />
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" >
+         <item>
+          <widget class="QPushButton" name="pushButton_new" >
+           <property name="text" >
+            <string/>
+           </property>
+           <property name="icon" >
+            <iconset>
+             <normaloff>:/images/images/adept_install.png</normaloff>:/images/images/adept_install.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_delete" >
+           <property name="text" >
+            <string/>
+           </property>
+           <property name="icon" >
+            <iconset>
+             <normaloff>:/images/images/adept_purge.png</normaloff>:/images/images/adept_purge.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0" >
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_revert" >
+           <property name="text" >
+            <string/>
+           </property>
+           <property name="icon" >
+            <iconset>
+             <normaloff>:/images/images/button_cancel.png</normaloff>:/images/images/button_cancel.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_submit" >
+           <property name="text" >
+            <string/>
+           </property>
+           <property name="icon" >
+            <iconset>
+             <normaloff>:/images/images/button_ok.png</normaloff>:/images/images/button_ok.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
